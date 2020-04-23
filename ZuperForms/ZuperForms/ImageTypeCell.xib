@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageTypeCell" rowHeight="108" id="AHM-ne-wEz" customClass="ImageTypeCell" customModule="ZuperFormsSdk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AHM-ne-wEz" id="Rhw-xS-c25">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ikl-ka-25n" customClass="CornerRadiusView" customModule="ZuperFormsSdk" customModuleProvider="target">
+                        <rect key="frame" x="8" y="4" width="398" height="100"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvF-Gc-eAE">
+                                <rect key="frame" x="0.0" y="0.0" width="398" height="100"/>
+                                <color key="tintColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="  Click to add image" image="icon-add-file">
+                                    <color key="titleColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pvF-Gc-eAE" firstAttribute="top" secondItem="Ikl-ka-25n" secondAttribute="top" id="DQS-4F-qJj"/>
+                            <constraint firstAttribute="height" constant="100" id="Ye7-JY-rjE"/>
+                            <constraint firstAttribute="bottom" secondItem="pvF-Gc-eAE" secondAttribute="bottom" id="jZF-e4-v2E"/>
+                            <constraint firstAttribute="trailing" secondItem="pvF-Gc-eAE" secondAttribute="trailing" id="jzI-FY-RHD"/>
+                            <constraint firstItem="pvF-Gc-eAE" firstAttribute="leading" secondItem="Ikl-ka-25n" secondAttribute="leading" id="vbZ-bV-sbh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76Y-wk-oX4" customClass="CornerRadiusView" customModule="ZuperFormsSdk" customModuleProvider="target">
+                        <rect key="frame" x="8" y="4" width="398" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPy-qR-VEP">
+                                <rect key="frame" x="164" y="15" width="70" height="70"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="kwr-BQ-yj0"/>
+                                    <constraint firstAttribute="height" constant="70" id="pyU-Mw-bmn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6l-Ab-bbO">
+                                <rect key="frame" x="222" y="3" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="MwL-9c-kBZ"/>
+                                    <constraint firstAttribute="width" constant="24" id="fps-rO-ekE"/>
+                                </constraints>
+                                <state key="normal" image="icon-close"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZPy-qR-VEP" firstAttribute="centerY" secondItem="76Y-wk-oX4" secondAttribute="centerY" id="7Sm-Im-Cva"/>
+                            <constraint firstItem="t6l-Ab-bbO" firstAttribute="top" secondItem="ZPy-qR-VEP" secondAttribute="top" constant="-12" id="gwl-vc-WT9"/>
+                            <constraint firstItem="ZPy-qR-VEP" firstAttribute="centerX" secondItem="76Y-wk-oX4" secondAttribute="centerX" id="tuq-83-JgZ"/>
+                            <constraint firstItem="t6l-Ab-bbO" firstAttribute="trailing" secondItem="ZPy-qR-VEP" secondAttribute="trailing" constant="12" id="vP0-qS-hOp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ikl-ka-25n" secondAttribute="bottom" constant="4" id="4RR-vY-OSD"/>
+                    <constraint firstItem="Ikl-ka-25n" firstAttribute="leading" secondItem="Rhw-xS-c25" secondAttribute="leading" constant="8" id="Isb-jS-Zec"/>
+                    <constraint firstItem="76Y-wk-oX4" firstAttribute="trailing" secondItem="Ikl-ka-25n" secondAttribute="trailing" id="OSg-XQ-2fD"/>
+                    <constraint firstItem="76Y-wk-oX4" firstAttribute="leading" secondItem="Ikl-ka-25n" secondAttribute="leading" id="Sci-Ld-4hl"/>
+                    <constraint firstAttribute="trailing" secondItem="Ikl-ka-25n" secondAttribute="trailing" constant="8" id="VX1-Yd-cfJ"/>
+                    <constraint firstItem="76Y-wk-oX4" firstAttribute="bottom" secondItem="Ikl-ka-25n" secondAttribute="bottom" id="eds-Z6-5IL"/>
+                    <constraint firstItem="76Y-wk-oX4" firstAttribute="top" secondItem="Ikl-ka-25n" secondAttribute="top" id="mha-Jz-wMr"/>
+                    <constraint firstItem="Ikl-ka-25n" firstAttribute="top" secondItem="Rhw-xS-c25" secondAttribute="top" constant="4" id="pd3-Av-xtY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addImageBtn" destination="pvF-Gc-eAE" id="4NZ-au-v73"/>
+                <outlet property="deleteBtn" destination="t6l-Ab-bbO" id="8d8-Vq-HWh"/>
+                <outlet property="imageWrapperView" destination="76Y-wk-oX4" id="bJ6-IK-b4X"/>
+                <outlet property="mainView" destination="Ikl-ka-25n" id="0uo-hF-FUe"/>
+                <outlet property="selectedImageView" destination="ZPy-qR-VEP" id="UOE-1m-zkq"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="246.09375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-add-file" width="20" height="20"/>
+        <image name="icon-close" width="20" height="20"/>
+    </resources>
+</document>

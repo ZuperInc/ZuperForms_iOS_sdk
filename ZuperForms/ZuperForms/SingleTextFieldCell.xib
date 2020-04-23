@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SingleTextFieldCell" rowHeight="66" id="lxP-l7-9zZ" customClass="SingleTextFieldCell" customModule="ZuperFormsSdk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lxP-l7-9zZ" id="lRH-xe-jfq">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBk-RO-adc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Temperature in 'F" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="97V-2G-xvp">
+                                <rect key="frame" x="8" y="8" width="398" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Xfw-Ox-UOq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="97V-2G-xvp" secondAttribute="trailing" constant="8" id="69g-Nw-lSU"/>
+                            <constraint firstItem="97V-2G-xvp" firstAttribute="top" secondItem="wBk-RO-adc" secondAttribute="top" constant="8" id="Jz8-X7-FgY"/>
+                            <constraint firstAttribute="bottom" secondItem="97V-2G-xvp" secondAttribute="bottom" constant="8" id="TsP-zH-PfP"/>
+                            <constraint firstItem="97V-2G-xvp" firstAttribute="leading" secondItem="wBk-RO-adc" secondAttribute="leading" constant="8" id="i1j-Be-1DF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="wBk-RO-adc" secondAttribute="bottom" id="P5v-fV-YbF"/>
+                    <constraint firstAttribute="trailing" secondItem="wBk-RO-adc" secondAttribute="trailing" id="fKY-a4-H4m"/>
+                    <constraint firstItem="wBk-RO-adc" firstAttribute="top" secondItem="lRH-xe-jfq" secondAttribute="top" id="kfS-VI-WWd"/>
+                    <constraint firstItem="wBk-RO-adc" firstAttribute="leading" secondItem="lRH-xe-jfq" secondAttribute="leading" id="n01-F2-W67"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="textField" destination="97V-2G-xvp" id="HK3-9E-Rfb"/>
+            </connections>
+            <point key="canvasLocation" x="100.00000000000001" y="-22.767857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

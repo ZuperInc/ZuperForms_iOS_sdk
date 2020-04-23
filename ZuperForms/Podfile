@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '11.0'
+
+target 'ZuperForms' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  pod 'SNHttpRequest'
+  pod 'IQKeyboardManagerSwift'
+  pod 'NVActivityIndicatorView'
+  pod 'EmptyStateKit'
+
+end
+
+  target 'ZuperFormsExample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  pod 'SNHttpRequest'
+  pod 'IQKeyboardManagerSwift'
+  pod 'NVActivityIndicatorView'
+  pod 'EmptyStateKit'
+
+  # Pods for ZuperForms
+
+
+end

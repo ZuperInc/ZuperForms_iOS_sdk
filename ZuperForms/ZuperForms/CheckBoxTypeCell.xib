@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="I5k-sW-N33" customClass="CheckBoxTypeCell" customModule="ZuperFormsSdk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I5k-sW-N33" id="k86-cW-Zqd">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9KX-bG-Qa6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-checkbox" translatesAutoresizingMaskIntoConstraints="NO" id="y8A-My-OGj">
+                                <rect key="frame" x="8" y="13" width="24" height="24"/>
+                                <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="c3h-5T-1pM"/>
+                                    <constraint firstAttribute="width" constant="24" id="pVP-Fo-2SM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQJ-bG-sjr">
+                                <rect key="frame" x="44" y="16" width="362" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lQJ-bG-sjr" secondAttribute="trailing" constant="8" id="21e-82-d1H"/>
+                            <constraint firstItem="lQJ-bG-sjr" firstAttribute="leading" secondItem="y8A-My-OGj" secondAttribute="trailing" constant="12" id="5e6-UH-SHt"/>
+                            <constraint firstItem="y8A-My-OGj" firstAttribute="centerY" secondItem="9KX-bG-Qa6" secondAttribute="centerY" id="N5n-cU-mi9"/>
+                            <constraint firstItem="lQJ-bG-sjr" firstAttribute="centerY" secondItem="y8A-My-OGj" secondAttribute="centerY" id="VlU-gL-KMk"/>
+                            <constraint firstItem="y8A-My-OGj" firstAttribute="leading" secondItem="9KX-bG-Qa6" secondAttribute="leading" constant="8" id="vey-MG-C9Q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="9KX-bG-Qa6" firstAttribute="top" secondItem="k86-cW-Zqd" secondAttribute="top" id="Ehy-sH-6Bp"/>
+                    <constraint firstAttribute="bottom" secondItem="9KX-bG-Qa6" secondAttribute="bottom" id="NYq-IH-uob"/>
+                    <constraint firstAttribute="trailing" secondItem="9KX-bG-Qa6" secondAttribute="trailing" id="ef1-OZ-s3A"/>
+                    <constraint firstItem="9KX-bG-Qa6" firstAttribute="leading" secondItem="k86-cW-Zqd" secondAttribute="leading" id="qJc-Eo-hKS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imageTypeView" destination="y8A-My-OGj" id="zU7-KL-d1x"/>
+                <outlet property="lblOption" destination="lQJ-bG-sjr" id="V2s-BF-Ypu"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="33.147321428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-checkbox" width="48" height="48"/>
+    </resources>
+</document>

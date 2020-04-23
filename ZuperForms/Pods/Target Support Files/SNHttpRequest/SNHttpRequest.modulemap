@@ -1,0 +1,6 @@
+module SNHttpRequest {
+  umbrella header "SNHttpRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}

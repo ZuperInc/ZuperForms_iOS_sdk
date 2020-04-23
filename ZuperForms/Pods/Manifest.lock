@@ -1,0 +1,30 @@
+PODS:
+  - EmptyStateKit (1.1.0)
+  - IQKeyboardManagerSwift (6.5.5)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - SNHttpRequest (1.0.3)
+
+DEPENDENCIES:
+  - EmptyStateKit
+  - IQKeyboardManagerSwift
+  - NVActivityIndicatorView
+  - SNHttpRequest
+
+SPEC REPOS:
+  trunk:
+    - EmptyStateKit
+    - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
+    - SNHttpRequest
+
+SPEC CHECKSUMS:
+  EmptyStateKit: dc41e9ce5c6089f67a49d063bce73ade9f2ba73f
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  SNHttpRequest: 064b44df5184154b9a0871cf9020c868c2542d16
+
+PODFILE CHECKSUM: 9cd00876414d2f97230d818b8752b278ca66b7f9
+
+COCOAPODS: 1.9.1
