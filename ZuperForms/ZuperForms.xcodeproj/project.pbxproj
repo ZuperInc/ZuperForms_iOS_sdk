@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -64,8 +64,8 @@
 		186F62FC24525DD90068B55A /* tick.gif in Resources */ = {isa = PBXBuildFile; fileRef = 186F62F924525DD90068B55A /* tick.gif */; };
 		186F62FD24525E3B0068B55A /* ZuperForms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F627A24525B990068B55A /* ZuperForms.framework */; };
 		186F62FE24525E3B0068B55A /* ZuperForms.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 186F627A24525B990068B55A /* ZuperForms.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		33995113CFDF21F0478C5A7E /* libPods-ZuperForms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47052622C773CBD513FA7A65 /* libPods-ZuperForms.a */; };
-		C90367AE06CC98E943F57AF0 /* libPods-ZuperFormsExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 032A7F7107DB8951896891B8 /* libPods-ZuperFormsExample.a */; };
+		34CB7A42490DA294E8A71417 /* Pods_ZuperFormsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803FCEEFF24F77E783E8626A /* Pods_ZuperFormsExample.framework */; };
+		5679E420496DE39453C29C45 /* Pods_ZuperForms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5742C6BC6994EC00F46925D3 /* Pods_ZuperForms.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		032A7F7107DB8951896891B8 /* libPods-ZuperFormsExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZuperFormsExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		180BA4DC24526D21003ADF17 /* ZuperFormsExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZuperFormsExample.entitlements; sourceTree = "<group>"; };
 		186F627A24525B990068B55A /* ZuperForms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZuperForms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		186F627D24525B990068B55A /* ZuperForms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZuperForms.h; sourceTree = "<group>"; };
 		186F627E24525B990068B55A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,8 +153,9 @@
 		186F62F724525DD90068B55A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		186F62F824525DD90068B55A /* Layer 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 16.png"; sourceTree = "<group>"; };
 		186F62F924525DD90068B55A /* tick.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tick.gif; sourceTree = "<group>"; };
-		47052622C773CBD513FA7A65 /* libPods-ZuperForms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZuperForms.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5742C6BC6994EC00F46925D3 /* Pods_ZuperForms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuperForms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D793A69736E3BB916CD0A53 /* Pods-ZuperForms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuperForms.debug.xcconfig"; path = "Target Support Files/Pods-ZuperForms/Pods-ZuperForms.debug.xcconfig"; sourceTree = "<group>"; };
+		803FCEEFF24F77E783E8626A /* Pods_ZuperFormsExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuperFormsExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D23C023EC758EAE42DDA96D /* Pods-ZuperFormsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuperFormsExample.debug.xcconfig"; path = "Target Support Files/Pods-ZuperFormsExample/Pods-ZuperFormsExample.debug.xcconfig"; sourceTree = "<group>"; };
 		F028E812261731F2AEC9AB78 /* Pods-ZuperForms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuperForms.release.xcconfig"; path = "Target Support Files/Pods-ZuperForms/Pods-ZuperForms.release.xcconfig"; sourceTree = "<group>"; };
 		FC3DD832E1BE1E64D8C70CEE /* Pods-ZuperFormsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuperFormsExample.release.xcconfig"; path = "Target Support Files/Pods-ZuperFormsExample/Pods-ZuperFormsExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,7 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33995113CFDF21F0478C5A7E /* libPods-ZuperForms.a in Frameworks */,
+				5679E420496DE39453C29C45 /* Pods_ZuperForms.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				186F62FD24525E3B0068B55A /* ZuperForms.framework in Frameworks */,
-				C90367AE06CC98E943F57AF0 /* libPods-ZuperFormsExample.a in Frameworks */,
+				34CB7A42490DA294E8A71417 /* Pods_ZuperFormsExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +196,8 @@
 		1248883410703B30D5F9C7DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				47052622C773CBD513FA7A65 /* libPods-ZuperForms.a */,
-				032A7F7107DB8951896891B8 /* libPods-ZuperFormsExample.a */,
+				5742C6BC6994EC00F46925D3 /* Pods_ZuperForms.framework */,
+				803FCEEFF24F77E783E8626A /* Pods_ZuperFormsExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -281,6 +282,7 @@
 		186F628A24525CA10068B55A /* ZuperFormsExample */ = {
 			isa = PBXGroup;
 			children = (
+				180BA4DC24526D21003ADF17 /* ZuperFormsExample.entitlements */,
 				186F628B24525CA10068B55A /* AppDelegate.swift */,
 				186F628D24525CA10068B55A /* SceneDelegate.swift */,
 				186F628F24525CA10068B55A /* ViewController.swift */,
@@ -315,7 +317,6 @@
 				186F627624525B990068B55A /* Sources */,
 				186F627724525B990068B55A /* Frameworks */,
 				186F627824525B990068B55A /* Resources */,
-				DC0623BE11BBE5DAC55CEE2D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,7 +336,7 @@
 				186F628624525CA10068B55A /* Frameworks */,
 				186F628724525CA10068B55A /* Resources */,
 				186F630124525E3B0068B55A /* Embed Frameworks */,
-				B14BE069E472C20EBB9667A8 /* [CP] Copy Pods Resources */,
+				F9F10600222D134135551C83 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -442,40 +443,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B14BE069E472C20EBB9667A8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZuperFormsExample/Pods-ZuperFormsExample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZuperFormsExample/Pods-ZuperFormsExample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZuperFormsExample/Pods-ZuperFormsExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DC0623BE11BBE5DAC55CEE2D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZuperForms/Pods-ZuperForms-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZuperForms/Pods-ZuperForms-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZuperForms/Pods-ZuperForms-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F2074834E80B26C5F4076D77 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -496,6 +463,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F10600222D134135551C83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZuperFormsExample/Pods-ZuperFormsExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZuperFormsExample/Pods-ZuperFormsExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZuperFormsExample/Pods-ZuperFormsExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -764,15 +748,19 @@
 			baseConfigurationReference = 8D23C023EC758EAE42DDA96D /* Pods-ZuperFormsExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZuperFormsExample/ZuperFormsExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HKFNV2JRF8;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DEVELOPMENT_TEAM = L52QW66ZHZ;
 				INFOPLIST_FILE = ZuperFormsExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zuper.ZuperFormsExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuper.pro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -783,15 +771,19 @@
 			baseConfigurationReference = FC3DD832E1BE1E64D8C70CEE /* Pods-ZuperFormsExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZuperFormsExample/ZuperFormsExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HKFNV2JRF8;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DEVELOPMENT_TEAM = L52QW66ZHZ;
 				INFOPLIST_FILE = ZuperFormsExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zuper.ZuperFormsExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuper.pro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

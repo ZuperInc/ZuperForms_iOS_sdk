@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-ZuperFormsExample/Pods-ZuperFormsExample-frameworks.sh
+${BUILT_PRODUCTS_DIR}/EmptyStateKit/EmptyStateKit.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
+${BUILT_PRODUCTS_DIR}/SNHttpRequest/SNHttpRequest.framework

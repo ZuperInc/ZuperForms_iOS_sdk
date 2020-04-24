@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "151849092865DFECC0DA34C639EC1EC3"
-               BuildableName = "libEmptyStateKit.a"
+               BuildableName = "EmptyStateKit.framework"
                BlueprintName = "EmptyStateKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

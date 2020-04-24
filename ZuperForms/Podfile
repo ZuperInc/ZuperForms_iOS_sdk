@@ -1,23 +1,33 @@
 # Uncomment the next line to define a global platform for your project
  platform :ios, '11.0'
+ use_frameworks!
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
 
 target 'ZuperForms' do
-  # Comment the next line if you don't want to use dynamic frameworks
   pod 'SNHttpRequest'
   pod 'IQKeyboardManagerSwift'
   pod 'NVActivityIndicatorView'
   pod 'EmptyStateKit'
-
 end
 
   target 'ZuperFormsExample' do
-  # Comment the next line if you don't want to use dynamic frameworks
   pod 'SNHttpRequest'
   pod 'IQKeyboardManagerSwift'
   pod 'NVActivityIndicatorView'
   pod 'EmptyStateKit'
-
-  # Pods for ZuperForms
-
-
 end
+
+ENV["COCOAPODS_DISABLE_STATS"] = "true"
+
+
+post_install do |installer|
+      installer.pods_project.build_configurations.each do |config|
+        if config.name == 'Release'
+          config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Owholemodule'
+        else
+          config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Onone'
+        end
+      end
+    end

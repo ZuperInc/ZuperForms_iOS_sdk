@@ -1,4 +1,4 @@
-module Pods_ZuperForms {
+framework module Pods_ZuperForms {
   umbrella header "Pods-ZuperForms-umbrella.h"
 
   export *

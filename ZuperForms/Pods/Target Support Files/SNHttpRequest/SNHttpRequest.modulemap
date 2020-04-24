@@ -1,4 +1,4 @@
-module SNHttpRequest {
+framework module SNHttpRequest {
   umbrella header "SNHttpRequest-umbrella.h"
 
   export *

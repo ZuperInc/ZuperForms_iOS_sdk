@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FA5547AA5C83992B256A094CF6483FC3"
-               BuildableName = "libSNHttpRequest.a"
+               BuildableName = "SNHttpRequest.framework"
                BlueprintName = "SNHttpRequest"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
