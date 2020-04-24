@@ -108,7 +108,7 @@ Pod::Spec.new do |spec|
 
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
-  spec.resources = 'ZuperForms/**/*.{png,storyboard,xib,gif,assests}'
+  spec.resources = 'ZuperForms/**/*.{png,storyboard,xib,gif,xcassets}'
 
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
