@@ -91,37 +91,37 @@ class ZuperFormsViewModel {
     
     
     /// Get company congig data
-    func getCompanyConfig(){
-        
-        if isUserOnline(){
-            showCommonLoader()
-            Services.shared.getCompanyConfig(companyUid: companyUid) {(response) in
-                removeActivityIndicator()
-                switch response
-                {
-                case .Success(let responseData):
-                    if responseData != nil
-                    {
-                        print(responseData ?? nil)
-                    }
-                    
-                case .ApiError( let apiError):
-                    if let message = apiError[message] as? String
-                    {
-                        AlertView.showAlertView(title: errorTitle, message: message,viewController: self.vc)
-                    }else{
-                        self.vc.view.emptyState.show(MainState.somethingWrong)
-                    }
-                    
-                case .Error( _):
-                    self.vc.view.emptyState.show(MainState.somethingWrong)
-                }
-            }
-        }
-        else{
-            
-        }
-    }
+//    func getCompanyConfig(){
+//        
+//        if isUserOnline(){
+//            showCommonLoader()
+//            Services.shared.getCompanyConfig(companyUid: companyUid) {(response) in
+//                removeActivityIndicator()
+//                switch response
+//                {
+//                case .Success(let responseData):
+//                    if responseData != nil
+//                    {
+//                        print(responseData ?? nil)
+//                    }
+//                    
+//                case .ApiError( let apiError):
+//                    if let message = apiError[message] as? String
+//                    {
+//                        AlertView.showAlertView(title: errorTitle, message: message,viewController: self.vc)
+//                    }else{
+//                        self.vc.view.emptyState.show(MainState.somethingWrong)
+//                    }
+//                    
+//                case .Error( _):
+//                    self.vc.view.emptyState.show(MainState.somethingWrong)
+//                }
+//            }
+//        }
+//        else{
+//            
+//        }
+//    }
     
     
     /// Navigate to Login viewController

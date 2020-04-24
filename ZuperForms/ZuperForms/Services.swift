@@ -237,7 +237,7 @@ struct Services {
                         
                         if let data = data {
                             do {
-                                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject] {
+                                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
                                     DispatchQueue.main.async {
                                         completion(.Success(json))
                                     }
@@ -300,14 +300,14 @@ struct Services {
 /// Commom Result for API Response
 enum Result <T>{
     case Success(T)
-    case Error(ApiResponseError)
+    case Error(ResponseError)
     case ApiError([String:Any])
 }
 
 typealias ResponseDict = (Result<[String: Any]>) -> ()
 
 /// ApiResponse Error
-enum ApiResponseError: Error {
+enum ResponseError: Error {
     case requestFailed
     case jsonConversionFailure
     case invalidData

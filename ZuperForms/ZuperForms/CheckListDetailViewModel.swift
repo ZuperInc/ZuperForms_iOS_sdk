@@ -197,7 +197,7 @@ class CheckListDetailViewModel{
             _ = vc?.attachmentArray.first?.fileName.components(separatedBy: ".").last
             let mimeType = "IMAGE" //+ "/" + extensionPath!
             
-            Services.shared.uploadImage(url: url!, imageData: imageData!, accesToken: getAccesToken(), postData: nil, method: "POST", fileName: fileName!, type: mimeType) { [weak vc](apiResponse) in
+            Services.shared.uploadImage(url: url!, imageData: imageData!, accesToken: getAccesToken(), postData: nil, method: "POST", fileName: fileName!, type: mimeType) { (apiResponse) in
                 
                 removeActivityIndicator()
                 
