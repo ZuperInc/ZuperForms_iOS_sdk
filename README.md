@@ -17,4 +17,4 @@
 ```ruby
 pod 'ZuperForms'
 ```
-![ZuperForms: Login](https://i.ibb.co/fYZwdxJ/Screenshot-2020-04-25-at-11-13-50-AM.png)
+![ZuperForms](https://i.ibb.co/dkDk6qj/merge-from-ofoct.png)
