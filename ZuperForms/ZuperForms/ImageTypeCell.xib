@@ -2,20 +2,21 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageTypeCell" rowHeight="108" id="AHM-ne-wEz" customClass="ImageTypeCell" customModule="ZuperFormsSdk" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageTypeCell" rowHeight="108" id="AHM-ne-wEz" customClass="ImageTypeCell" customModule="ZuperForms" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AHM-ne-wEz" id="Rhw-xS-c25">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ikl-ka-25n" customClass="CornerRadiusView" customModule="ZuperFormsSdk" customModuleProvider="target">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ikl-ka-25n" customClass="CornerRadiusView" customModule="ZuperForms" customModuleProvider="target">
                         <rect key="frame" x="8" y="4" width="398" height="100"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvF-Gc-eAE">
@@ -40,7 +41,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76Y-wk-oX4" customClass="CornerRadiusView" customModule="ZuperFormsSdk" customModuleProvider="target">
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76Y-wk-oX4" customClass="CornerRadiusView" customModule="ZuperForms" customModuleProvider="target">
                         <rect key="frame" x="8" y="4" width="398" height="100"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPy-qR-VEP">
@@ -57,7 +58,7 @@
                                     <constraint firstAttribute="height" constant="24" id="MwL-9c-kBZ"/>
                                     <constraint firstAttribute="width" constant="24" id="fps-rO-ekE"/>
                                 </constraints>
-                                <state key="normal" image="icon-close"/>
+                                <state key="normal" image="ICON-CLOSE"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,7 +98,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="ICON-CLOSE" width="20" height="20"/>
         <image name="icon-add-file" width="20" height="20"/>
-        <image name="icon-close" width="20" height="20"/>
     </resources>
 </document>

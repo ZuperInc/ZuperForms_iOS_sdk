@@ -405,14 +405,17 @@ extension ChecklistDetailController: EmptyStateDataSource {
     
     func imageForState(_ state: CustomState, inEmptyState emptyState: EmptyState) -> UIImage? {
         switch state as! MainState {
-        case .noInternet: return returnImage("icon_wifi")
+        case .noInternet: return ImageHelper.image("icon_wifi")
+            //returnImage("icon_wifi")
         case .somethingWrong:
-            return returnImage("icon-issue")
+            return ImageHelper.image("icon-issue")
+                //returnImage("icon-issue")
         case .errorMessage:
-            return returnImage(emptyStateImg)
+            return ImageHelper.image(emptyStateImg)
+                //returnImage(emptyStateImg)
         case .emptyMessage:
-            return returnImage(emptyStateImg)
-            
+            return ImageHelper.image(emptyStateImg)
+                //returnImage(emptyStateImg)
         }
     }
     
