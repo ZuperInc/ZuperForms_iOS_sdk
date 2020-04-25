@@ -32,6 +32,11 @@ self.present(zuperFormObj, animated: true, completion: nil)
 
 ```
 
+### Clear Data
+```ruby
+ZuperFormsData.clear()
+```
+
 ### Themes
 ```ruby
 ZuperFormsTheme.backgroundColor = .black
