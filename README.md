@@ -18,3 +18,25 @@
 pod 'ZuperForms'
 ```
 ![ZuperForms](https://i.ibb.co/dkDk6qj/merge-from-ofoct.png)
+
+
+## Examples
+```ruby
+import ZuperForms
+
+let zuperFormObj = ZuperForms(companyName:"ZuperSoft Solutions")
+zuperFormObj.delegate = self
+zuperFormObj.modalPresentationStyle = .fullScreen
+self.present(zuperFormObj, animated: true, completion: nil)
+
+
+```
+
+### Themes
+```ruby
+ZuperFormsTheme.backgroundColor = .black
+ZuperFormsTheme.primaryColor = .red
+ZuperFormsTheme.labelTextColor = .white
+ZuperFormsTheme.textFieldTextColor = .white
+ZuperFormsTheme.cardViewBackgroundColor = .black
+```
