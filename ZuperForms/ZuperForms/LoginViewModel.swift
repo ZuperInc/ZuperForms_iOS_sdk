@@ -338,7 +338,7 @@ extension LoginController: EmptyStateDataSource {
 
 
 public func returnImage(_ named:String) -> UIImage {
-    let myBundle = Bundle.init(identifier: "com.zuper.ZuperForms")
+    let myBundle = Bundle.init(identifier: "ZuperFormsAssets")
     if #available(iOS 13.0, *) {
         let imagePath = UIImage(named: named, in: myBundle, compatibleWith: .current)
          return imagePath!

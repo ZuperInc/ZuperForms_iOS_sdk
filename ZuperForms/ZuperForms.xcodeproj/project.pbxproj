@@ -64,6 +64,7 @@
 		186F62FC24525DD90068B55A /* tick.gif in Resources */ = {isa = PBXBuildFile; fileRef = 186F62F924525DD90068B55A /* tick.gif */; platformFilter = ios; };
 		186F62FD24525E3B0068B55A /* ZuperForms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F627A24525B990068B55A /* ZuperForms.framework */; };
 		186F62FE24525E3B0068B55A /* ZuperForms.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 186F627A24525B990068B55A /* ZuperForms.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18EEB06C2453DCB30088CE38 /* ZuperFormsAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18EEB06B2453DCB30088CE38 /* ZuperFormsAssets.bundle */; };
 		34CB7A42490DA294E8A71417 /* Pods_ZuperFormsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803FCEEFF24F77E783E8626A /* Pods_ZuperFormsExample.framework */; };
 		5679E420496DE39453C29C45 /* Pods_ZuperForms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5742C6BC6994EC00F46925D3 /* Pods_ZuperForms.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
@@ -153,6 +154,7 @@
 		186F62F724525DD90068B55A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		186F62F824525DD90068B55A /* Layer 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 16.png"; sourceTree = "<group>"; };
 		186F62F924525DD90068B55A /* tick.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tick.gif; sourceTree = "<group>"; };
+		18EEB06B2453DCB30088CE38 /* ZuperFormsAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZuperFormsAssets.bundle; sourceTree = "<group>"; };
 		5742C6BC6994EC00F46925D3 /* Pods_ZuperForms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuperForms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D793A69736E3BB916CD0A53 /* Pods-ZuperForms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuperForms.debug.xcconfig"; path = "Target Support Files/Pods-ZuperForms/Pods-ZuperForms.debug.xcconfig"; sourceTree = "<group>"; };
 		803FCEEFF24F77E783E8626A /* Pods_ZuperFormsExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuperFormsExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,6 +277,7 @@
 				186F62F724525DD90068B55A /* Assets.xcassets */,
 				186F62F824525DD90068B55A /* Layer 16.png */,
 				186F62F924525DD90068B55A /* tick.gif */,
+				18EEB06B2453DCB30088CE38 /* ZuperFormsAssets.bundle */,
 			);
 			path = ZuperForms;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				186F62D324525DBD0068B55A /* CheckBoxTypeCell.xib in Resources */,
 				186F62D924525DBD0068B55A /* LoginController.xib in Resources */,
 				186F62FB24525DD90068B55A /* Layer 16.png in Resources */,
+				18EEB06C2453DCB30088CE38 /* ZuperFormsAssets.bundle in Resources */,
 				186F62D824525DBD0068B55A /* MediaLibrary.storyboard in Resources */,
 				186F62D624525DBD0068B55A /* SectionCell.xib in Resources */,
 				186F62FC24525DD90068B55A /* tick.gif in Resources */,

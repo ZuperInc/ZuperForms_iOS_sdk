@@ -120,8 +120,22 @@ struct ChecklistQuestionType {
 
 
 
-
-
+/// Clear all datas
+public class ZuperFormsData {
+    
+    class func clear(){
+        
+         companyUid = EMPTY
+         companyUrl = EMPTY
+         userEmail = EMPTY
+         companyImg = nil
+         cmpName = EMPTY
+         checklistUid = EMPTY
+        //Clear access token
+        Defaults.removeObject(forKey: UserDefaultsKeys.accessToken)
+        Defaults.synchronize()
+    }
+}
 
 
 

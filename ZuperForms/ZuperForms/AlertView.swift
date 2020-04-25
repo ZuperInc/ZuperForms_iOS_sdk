@@ -103,7 +103,7 @@ extension UIImage {
     }
     
     public class func gifImageWithName(_ name: String) -> UIImage? {
-        let myBundle = Bundle.init(identifier: "com.zuper.ZuperForms")
+        let myBundle = Bundle.init(identifier: "ZuperFormsAssets")
         guard let bundleURL = myBundle?.url(forResource: name, withExtension: "gif")else {
             print("SwiftGif: This image named \"\(name)\" does not exist")
             return nil
@@ -257,7 +257,7 @@ extension UIImageView {
 extension UIImage {
     class func makeGIFFromCollection(name: String, repeatCount: Int = 0) -> GIF? {
         
-        let myBundle = Bundle.init(identifier: "com.zuper.ZuperForms")
+        let myBundle = Bundle.init(identifier: "ZuperFormsAssets")
         guard let path = myBundle?.path(forResource: name, ofType: "gif") else {
             print("Cannot find a path from the file \"\(name)\"")
             return nil
