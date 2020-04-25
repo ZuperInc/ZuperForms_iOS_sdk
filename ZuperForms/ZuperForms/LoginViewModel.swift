@@ -348,3 +348,14 @@ public func returnImage(_ named:String) -> UIImage {
          return imagePath!
     }
 }
+
+class ImageHelper {
+static func image(_ name: String) -> UIImage? {
+    let podBundle = Bundle(for: ImageHelper.self) // for getting pod url
+    if let url = podBundle.url(forResource: "ZuperFormsAssets", withExtension: "bundle") { //<YourBundleName> must be the same as you wrote in .podspec
+        let bundle = Bundle(url: url)
+        return UIImage(named: name, in: bundle, compatibleWith: nil)
+    }
+    return UIImage()
+}
+}

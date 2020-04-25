@@ -38,11 +38,13 @@ class RadioTypeCell: UITableViewCell {
         lblOption.text = option.option
         if option.isSelected
         {
-            imageTypeView.image = returnImage("icon-radioChecked")
+            imageTypeView.image = ImageHelper.image("icon-radioChecked")
+                //returnImage("icon-radioChecked")
         }
         else
         {
-            imageTypeView.image = returnImage("icon-radio")
+            imageTypeView.image = ImageHelper.image("icon-radio")
+                //returnImage("icon-radio")
         }
         self.selectionStyle = .none
     }

@@ -39,11 +39,13 @@ class CheckBoxTypeCell: UITableViewCell {
         lblOption.text = option.option
         if option.isSelected
         {
-            imageTypeView.image = returnImage("icon-checkBoxChecked")
+            imageTypeView.image = ImageHelper.image("icon-checkBoxChecked")
+                //returnImage("icon-checkBoxChecked")
         }
         else
         {
-            imageTypeView.image = returnImage("icon-checkbox")
+            imageTypeView.image = ImageHelper.image("icon-checkbox")
+                //returnImage("icon-checkbox")
         }
         self.selectionStyle = .none
     }

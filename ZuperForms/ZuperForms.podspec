@@ -109,7 +109,7 @@ Pod::Spec.new do |spec|
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
   spec.resource_bundle = {
-    'ZuperFormsAssets' => ['ZuperForms/Assets/*']
+    'ZuperFormsAssets' => ['ZuperForms/ZuperFormsAssets.bundle/*.png']
   }
   spec.resources = 'ZuperForms/**/*.{png,storyboard,xib,gif,xcassets}'
 

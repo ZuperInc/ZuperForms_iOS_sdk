@@ -24,7 +24,8 @@ class SuccessController: UIViewController {
         
         
         imgView.setGIFImage(name: "tick", repeatCount: 1)
-        imgView.image = returnImage("Success")
+        imgView.image = ImageHelper.image("Success")
+            //returnImage("Success")
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
 //            self.imgView.stopAnimating()
 //            self.imgView.set
