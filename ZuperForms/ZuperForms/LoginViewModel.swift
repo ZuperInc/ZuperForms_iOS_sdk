@@ -31,6 +31,7 @@ class LoginViewModel
     func setDefaults()
     {
         self.setEmptyStateView()
+        self.setImage()
         loginVC.lblEmail.text = email
         loginVC.lblOTP.text = otp
         loginVC.txtEmail.placeholder = enterEmail
@@ -39,6 +40,12 @@ class LoginViewModel
         loginVC.txtOTP.setBottomBorder()
         loginVC.view.backgroundColor = ZuperFormsTheme.backgroundColor
         self.showOrHideOTPView(show: false)
+    }
+    
+    func setImage(){
+        if companyUrl != EMPTY && companyUrl != nil{
+            loginVC.headerImage.downloaded(from: companyUrl)
+        }
     }
     
     /// To show and hide otp view based on email address entry

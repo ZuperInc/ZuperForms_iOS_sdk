@@ -24,13 +24,14 @@ class SectionListController: UIViewController{
             lblTop.text = cmpName
         }
     }
-    @IBOutlet weak var headerImage: UIView!
     
     @IBOutlet weak var headerView: UIView!{
         didSet{
             headerView.backgroundColor = ZuperFormsTheme.primaryColor
         }
     }
+    
+    @IBOutlet weak var companyImage: UIImageView!
     
     //MARK:- Variable Declaration
     var sectionListViewModel: SectionListViewModel!

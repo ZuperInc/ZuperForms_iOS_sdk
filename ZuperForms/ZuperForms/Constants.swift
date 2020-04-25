@@ -123,7 +123,7 @@ struct ChecklistQuestionType {
 /// Clear all datas
 public class ZuperFormsData {
     
-    class func clear(){
+    public class func clear(){
         
          companyUid = EMPTY
          companyUrl = EMPTY

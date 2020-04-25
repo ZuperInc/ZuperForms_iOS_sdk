@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,7 +11,7 @@
         <!--Section List Controller-->
         <scene sceneID="HeQ-Tf-nqe">
             <objects>
-                <viewController storyboardIdentifier="SectionListController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nbu-Tq-Xm3" customClass="SectionListController" customModule="ZuperFormsSdk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SectionListController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nbu-Tq-Xm3" customClass="SectionListController" customModule="ZuperForms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNk-aA-xHe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +118,7 @@
                         <viewLayoutGuide key="safeArea" id="ihJ-43-Xqw"/>
                     </view>
                     <connections>
-                        <outlet property="headerImage" destination="xHZ-ew-Bix" id="rpb-bM-VAo"/>
+                        <outlet property="companyImage" destination="xHZ-ew-Bix" id="4Qw-Sn-VCO"/>
                         <outlet property="headerView" destination="85X-Ov-cKx" id="IP3-pf-7DF"/>
                         <outlet property="lblTop" destination="icB-uO-Mcj" id="N7R-he-dlc"/>
                         <outlet property="tableView" destination="cfw-qC-VBF" id="eyF-Sn-M0s"/>
@@ -130,7 +131,7 @@
         <!--Checklist Detail Controller-->
         <scene sceneID="dJm-3P-LdO">
             <objects>
-                <viewController storyboardIdentifier="ChecklistDetailController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nfl-Qx-MCz" customClass="ChecklistDetailController" customModule="ZuperFormsSdk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChecklistDetailController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nfl-Qx-MCz" customClass="ChecklistDetailController" customModule="ZuperForms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ief-NS-C2x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +156,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="zQr-OC-s7P" customClass="CustomProgressView" customModule="ZuperFormsSdk" customModuleProvider="target">
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="zQr-OC-s7P" customClass="CustomProgressView" customModule="ZuperForms" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="66" width="302" height="13"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="12" id="CM1-TY-lfJ"/>
@@ -188,7 +189,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Gj-a8-uzV">
                                         <rect key="frame" x="0.0" y="498" width="320" height="70"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf2-ch-op7" customClass="CornerRadiusButton" customModule="ZuperFormsSdk" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf2-ch-op7" customClass="CornerRadiusButton" customModule="ZuperForms" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="17.5" width="80" height="35"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -204,7 +205,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxe-im-2hO" customClass="CornerRadiusButton" customModule="ZuperFormsSdk" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxe-im-2hO" customClass="CornerRadiusButton" customModule="ZuperForms" customModuleProvider="target">
                                                 <rect key="frame" x="224" y="17.5" width="80" height="35"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -231,7 +232,7 @@
                                             <constraint firstAttribute="height" constant="70" id="n4E-o4-ZSn"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2M-CV-05K" customClass="CornerRadiusView" customModule="ZuperFormsSdk" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2M-CV-05K" customClass="CornerRadiusView" customModule="ZuperForms" customModuleProvider="target">
                                         <rect key="frame" x="16" y="135" width="288" height="353"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mXZ-dY-6dp">
@@ -299,7 +300,7 @@
         <!--Success Controller-->
         <scene sceneID="H90-Lw-rCT">
             <objects>
-                <viewController storyboardIdentifier="SuccessController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C8T-dg-quO" customClass="SuccessController" customModule="ZuperFormsSdk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SuccessController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C8T-dg-quO" customClass="SuccessController" customModule="ZuperForms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gZl-l0-8lB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -26,6 +26,13 @@ class SectionListViewModel
         
     }
     
+    func setImage(){
+           if companyUrl != EMPTY && companyUrl != nil{
+               sectionVC.companyImage.downloaded(from: companyUrl)
+           }
+       }
+       
+    
     /// Set Defaults
     func setDefaults()
     {
@@ -34,6 +41,7 @@ class SectionListViewModel
         sectionVC?.tableView.register(UINib(nibName: xibNames.SectionCell, bundle: Bundle(for: SectionCell.self)), forCellReuseIdentifier: TableViewIdentifier.SectionCell)
         sectionVC?.tableView.estimatedRowHeight = 120
         setThemeForNavigationBar()
+        self.setImage()
         self.getChecklists()
     }
     

@@ -34,7 +34,7 @@ public class ZuperForms: UIViewController {
     ///   - companyId: CompanyID
     ///   - companyImage: ComanyImage(Image Url) - Optional
     ///   - email: EmailId - Optional
-    public init(companyId:String?,companyImageUrl:String? = nil,companyName:String? = nil,email:String? = nil,checklistId: String? = nil) {
+    public init(companyId:String? = nil,companyImageUrl:String? = nil,companyName:String? = nil,email:String? = nil,checklistId: String? = nil) {
         companyUid = companyId
         companyUrl = companyImageUrl
         userEmail = email
