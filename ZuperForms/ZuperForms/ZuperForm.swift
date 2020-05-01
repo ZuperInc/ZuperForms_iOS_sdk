@@ -43,6 +43,10 @@ public class ZuperForms: UIViewController {
         super.init(nibName:xibNames.ZuperForm, bundle: Bundle(for: ZuperForms.self))
     }
     
+    class public func setEnvironment(environment:ZuperFormsEnvironments){
+        endpoint = environment.rawValue
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

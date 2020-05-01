@@ -319,10 +319,10 @@ enum ResponseError: Error {
 }
 
 /// Zuper environment types
-public enum ZuperEnvironments : String {
+public enum ZuperFormsEnvironments : String {
     case live = ""
-    case staging = "https://staging.zuperpro.com/api"
-    case local = "http://167.71.224.211:4000"
+    case staging = "http://staging.covid.zuper.co/api"
+   // case local = "http://167.71.224.211:4000"
 }
 
 

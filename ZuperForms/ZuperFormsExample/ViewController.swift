@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         if sender.tag == 1 {
             let zuperFroms = ZuperForms(companyId: "", companyName: "ZuperSoft Solutions",checklistId: "ae9e39e0-83f6-11ea-bdff-3b74ec04e036")
             zuperFroms.delegate = self
+            ZuperForms.setEnvironment(environment:.staging)
             // let nav = UINavigationController(rootViewController: login)
             self.present(zuperFroms, animated: true, completion: nil)
         }

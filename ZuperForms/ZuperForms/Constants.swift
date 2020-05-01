@@ -11,7 +11,7 @@ import UIKit
 
 
 /// Root Endpoint
-var endpoint: String = ZuperEnvironments.local.rawValue
+var endpoint: String = ZuperFormsEnvironments.staging.rawValue
 
 var companyUid: String! = EMPTY
 var companyUrl: String! = EMPTY
