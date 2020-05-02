@@ -22,9 +22,10 @@ class SuccessController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        checkView()
         imgView.setGIFImage(name: "tick", repeatCount: 1)
         imgView.image = ImageHelper.image("Success")
+        
             //returnImage("Success")
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
 //            self.imgView.stopAnimating()
@@ -33,15 +34,24 @@ class SuccessController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func checkView(){
+        if isFromCheckListUid{
+            //Hide back button
+            //Show done button
+            self.navigationItem.setHidesBackButton(true, animated: false)
+            navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneAction))
+
+        }else{
+            //Show back button
+            //Hide done Button
+            self.navigationItem.setHidesBackButton(false, animated: false);
+            navigationItem.rightBarButtonItems = []
+        }
+    }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    @objc func doneAction(){
+        viewDelegate.dismiss(animated: true, completion: nil)
+    }
+   
     
 }

@@ -24,6 +24,8 @@ var checklistUid: String! = EMPTY
 var networkStatus : Bool = false
 
 var companyConfig:CompanyConfigData!
+var isFromCheckListUid: Bool = false
+var viewDelegate:UIViewController!
 
 //MARK:- Status
 

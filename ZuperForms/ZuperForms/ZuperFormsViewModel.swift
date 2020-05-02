@@ -30,7 +30,10 @@ class ZuperFormsViewModel {
     {
         if getAccesToken() != nil{
         //Get CompanyConfig Details
-            
+            //Set Global Delegate
+            if let delegateObj = self.vc.delegate{
+                viewDelegate = delegateObj
+            }
         ///If checklistId is not empty, then open the checklist directly
             if checklistUid != EMPTY && checklistUid != nil
             {

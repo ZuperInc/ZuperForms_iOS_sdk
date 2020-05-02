@@ -234,3 +234,13 @@ func getAttributedString(text: String) -> NSMutableAttributedString
     return attributedText
     
 }
+
+
+func setCheckListUid(checkListUid:String?){
+    if checkListUid != EMPTY && checkListUid != nil{
+        isFromCheckListUid = true
+    }
+    else{
+       isFromCheckListUid = false
+    }
+}

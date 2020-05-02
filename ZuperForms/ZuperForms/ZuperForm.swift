@@ -40,6 +40,7 @@ public class ZuperForms: UIViewController {
         userEmail = email
         cmpName = companyName
         checklistUid = checklistId
+        setCheckListUid(checkListUid:checklistId)
         super.init(nibName:xibNames.ZuperForm, bundle: Bundle(for: ZuperForms.self))
     }
     
